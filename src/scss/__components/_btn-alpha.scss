@@ -1,0 +1,10 @@
+.c-btn-alpha {
+    background: $pane__highlighted;
+    color: $wh-hill;
+}
+
+.c-btn-alpha[disabled] {
+    background: $pane_dark;
+    color: $wh-faded-blue;
+    pointer-events: none;
+}

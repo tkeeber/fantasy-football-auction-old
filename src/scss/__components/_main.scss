@@ -1,0 +1,14 @@
+body {
+    background: $canvas;
+}
+
+.c-main {
+    background: $pane;
+    position: fixed;
+    padding: $inuit-base-spacing-unit;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 560px;
+    min-height: 600px;
+}

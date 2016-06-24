@@ -1,0 +1,16 @@
+.c-btn-link {
+    background: transparent;
+    border: 0;
+    color: $pane__highlighted;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.c-btn-link:hover {
+    color: $pane__highlighted;
+    text-decoration: underline;
+}
+
+.c-btn-link--negative {
+    color: $negative;
+}

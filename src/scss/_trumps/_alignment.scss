@@ -1,0 +1,21 @@
+.right {
+    text-align: right;
+}
+
+.centre {
+    text-align: center;
+}
+
+.v-centre {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-margin {
+    margin-left: $inuit-base-spacing-unit;
+}
+
+.underlined {
+    text-decoration: underline;
+}

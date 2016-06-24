@@ -1,0 +1,19 @@
+.bold {
+    font-weight: bold;
+}
+
+.ellipsis {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}

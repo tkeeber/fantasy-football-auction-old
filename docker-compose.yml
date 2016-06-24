@@ -1,0 +1,25 @@
+version: '2'
+services:
+  rds:
+    image: docker-registry.prod.williamhill.plc/retail/rds:latest
+    ports:
+      - "9000:9000"
+    environment:
+      - elasticsearch.host=http://escli02.elk.cxp.williamhill.plc
+  rcs:
+    image: docker-registry.prod.williamhill.plc/retail/rcs:latest
+    ports:
+      - "9888:9888"
+    links:
+      - rds
+    environment:
+      - spring.profiles.active=infoblox.inactive,ob.inactive
+      - remote.retailDetail.base.uri=http://retail-rds01.pp1.williamhill.plc
+  ui:
+    build: .
+    ports:
+      - "80:8080"
+    links:
+      - rcs
+    environment:
+      - REMOTE_API_URI=http://rcs:9888

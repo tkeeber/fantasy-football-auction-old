@@ -1,0 +1,26 @@
+.c-empty-view {
+    color: $wh-faded-blue;
+    padding: $inuit-base-spacing-unit;
+    padding-top: $inuit-base-spacing-unit--large;
+    text-align: center;
+}
+
+.c-empty-view__title {
+    font-size: $inuit-heading-size-2;
+    font-weight: bold;
+    margin-bottom: $inuit-base-spacing-unit--tiny;
+}
+
+.c-empty-view__message {
+    font-size: $inuit-heading-size-4;
+}
+
+.c-empty-view__message--clickable {
+    cursor: pointer;
+}
+
+.c-empty-view__icon {
+    display: inline-block;
+    height: 96px;
+    width: 96px;
+}

@@ -1,0 +1,9 @@
+[type="date"],
+[type="email"],
+[type="number"],
+[type="text"] {
+    background: #fff;
+    border: 1px solid $pane__outset;
+    color: $pane__text;
+    padding: $inuit-base-spacing-unit--tiny;
+}
