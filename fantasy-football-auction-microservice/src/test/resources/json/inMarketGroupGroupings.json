@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Outrights",
+    "position": 0,
+    "marketGroups": [
+      {
+        "name": "Outright",
+        "position": 0,
+        "relations": [
+          {
+            "marketGroupName": "Outright",
+            "competitionId": "OB_TY1040"
+          },
+          {
+            "marketGroupName": "Match Betting Live",
+            "competitionId": "OB_TY1040"
+          }
+        ],
+        "mergedMarketGroups": [
+          {
+            "name": "Outright",
+            "position": 0
+          },
+          {
+            "name": "Match Betting Live",
+            "position": 1
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "eventId" : "OB_EV1262",
+    "marketId" : "OB_MA4513",
+    "selectionId" : "OB_OU20649"
+  },
+  {
+    "eventId" : "OB_EV136575",
+    "marketId" : "OB_MA420670",
+    "selectionId" : "OB_OU1752196"
+  },
+  {
+    "eventId" : "OB_EV136999",
+    "marketId" : "OB_MA420999",
+    "selectionId" : "OB_OU1752999"
+  }
+]

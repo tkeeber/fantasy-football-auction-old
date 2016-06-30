@@ -1,0 +1,36 @@
+<configuration>
+
+  <property name="log_path" value="/var/log/app" />
+
+  <!--If spring profile "docker" is active logs will be output into a file, otherwise they will go to a console -->
+
+  <springProfile name="!docker">
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+      <filter class="ch.qos.logback.classic.filter.ThresholdFilter" />
+      <encoder>
+        <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+      </encoder>
+    </appender>
+    <root level="INFO">
+      <appender-ref ref="stdout" />
+    </root>
+  </springProfile>
+
+  <springProfile name="docker">
+    <appender name="file-logstash" class="ch.qos.logback.core.rolling.RollingFileAppender">
+      <file>${log_path}/log.json</file>
+      <filter class="ch.qos.logback.classic.filter.ThresholdFilter" />
+      <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+      <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <!--Daily rollover (at midnight) -->
+        <FileNamePattern>${log_path}/%d{yyyy-MM-dd}.json</FileNamePattern>
+        <!--10 days -->
+        <maxHistory>10</maxHistory>
+      </rollingPolicy>
+    </appender>
+    <root level="INFO">
+      <appender-ref ref="file-logstash" />
+    </root>
+  </springProfile>
+
+</configuration>

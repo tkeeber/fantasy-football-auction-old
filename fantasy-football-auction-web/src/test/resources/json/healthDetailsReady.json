@@ -1,0 +1,15 @@
+[
+  {
+    "sportId": "OB_SP9",
+    "sportName": "Football",
+    "eventsInStore": 2,
+    "expectedEventsInStore": 2,
+    "allowedEventsTolerance": 10,
+    "competitionsInStore": 3,
+    "expectedCompetitionsInStore": 3,
+    "allowedCompetitionsTolerance": 2,
+    "marketGroupsInStore": 1,
+    "expectedMarketGroupsInStore": 1,
+    "allowedMarketGroupsTolerance": 2
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "groups": [
+    {
+      "position": 1,
+      "competitions": [
+        {
+          "position": 1,
+          "name": "English Championship",
+          "id": "OB_TY292"
+        },
+        {
+          "position": 2,
+          "name": "English FA Cup",
+          "id": "OB_TY129"
+        },
+        {
+          "position": 3,
+          "name": "English Premier League",
+          "id": "OB_TY295"
+        }
+      ],
+      "name": "UK"
+    }
+  ]
+}

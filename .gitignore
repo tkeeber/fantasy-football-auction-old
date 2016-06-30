@@ -1,0 +1,16 @@
+*.browserify
+*.iml
+*.sublime-workspace
+.DS_Store
+**/.DS_Store
+/.idea/
+/coverage/
+/karma-*/
+/node_modules/
+/src/css/
+/src/lib/
+/target/
+npm-debug.log
+.sass-cache
+/dist
+/bin/
