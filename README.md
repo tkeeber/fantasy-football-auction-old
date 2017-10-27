@@ -1,17 +1,14 @@
 <center>
-## Retail Commissioning UI ![alt text](https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_tablet_mac_black_24px.svg)
 </center>
 
 
-The Retail Commissioning UI project is the frontend build used commission and manage Ssbts. It's built with React, Immutable.js and webpack.
+Fantasy Football Auction UI. It's built with React, Immutable.js and webpack.
 
 <center>
 ### Setup
 <hr />
 </center>
 
-- `git clone git@gitlab.williamhill-dev.local:retail/retail-commissioning-ui.git`
-- `cd retail-commissioning-ui`
 - `npm i`
 - `npm start`
 
